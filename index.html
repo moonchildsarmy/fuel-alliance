@@ -23,7 +23,7 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/font-awesome.min.css">
-    <link href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.css" rel="stylesheet"  type='text/css'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
 
     <link rel="stylesheet" href="css/menu.css">
     <link rel="stylesheet" href="css/custom-animation.css">
@@ -95,35 +95,35 @@
 
                                     <!-- mega-menu end -->
                                     <li class="nav-item dropdown active">
-                                        <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Home</a>
+                                        <a href="#" class="nav-link dropdown-toggle" aria-haspopup="true" aria-expanded="false" onclick='scrollToMain'>Главная</a>
                                     </li>
                                     <!-- mega-menu start -->
 
                                     <!-- mega-menu end -->
                                     <li class="nav-item dropdown">
-                                        <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Services</a>
+                                        <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" onclick='scrollToNeft()'>Продукты нефтепереработки</a>
                                     </li>
                                     <!-- mega-menu start -->
 
                                     <!-- mega-menu end -->
                                     <li class="nav-item dropdown">
-                                        <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Projects</a>
+                                        <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" onclick='scrollToChemical()'>Химические продукты</a>
                                     </li>
                                     <!-- mega-menu start -->
 
                                     <!-- mega-menu end -->
                                     <li class="nav-item dropdown">
-                                        <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Pages</a>
+                                        <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" onclick='scrollToAbout()'>О нас</a>
                                     </li>
                                     <!-- mega-menu start -->
 
                                     <li class="nav-item dropdown ">
-                                        <a href="blog.html" class="nav-link dropdown-toggle" id="seventh-dropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Blog</a>
+                                        <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" onclick='scrollToPartners()'>партнеры</a>
                                     </li>
 
                                     <!-- mega-menu end -->
                                     <li class="nav-item dropdown">
-                                        <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Contact</a>
+                                        <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" onclick='scrollToContact()'>контакты</a>
                                     </li>
                                     <!-- mega-menu start -->
 
@@ -183,10 +183,10 @@
                                 <!-- Slide Text Layer -->
                                 <div class="slide-text slide-style-left">
                                     <div class="sub-title">
-                                        <h4>ОcОО «Топливный Альянс» </h4>
+                                        <h4 id="main">ОcОО «Топливный Альянс» </h4>
                                     </div>
                                     <div class="title-box">
-                                        <h2>молодая активная компания, созданная опытными нефтетрейдерами, работающими на рынке РФ</h2>
+                                        <h2>молодая активная компания, созданная опытными нефтетрейдерами</h2>
                                     </div>
                                 </div>
                             </div>
@@ -234,7 +234,7 @@
                                         <h4>ОcОО «Топливный Альянс» </h4>
                                     </div>
                                     <div class="title-box">
-                                        <h2>рынке стран СНГ и международных рынках нефтепродуктов и нефтехимии более 10 лет</h2>
+                                        <h2> работающими на рынке РФ и в рынке стран СНГ и международных рынках нефтепродуктов и нефтехимии более 10 лет.</h2>
                                     </div>
                                 </div>
                             </div>
@@ -313,7 +313,7 @@
             <div class="container">
                 <div class="row">
                     <div class="section-title">
-                        <h4>Наши Продукты</h4>
+                        <h4 id="neft">Наши Продукты</h4>
                         <h2>Продукты <span>нефтепереработки</span></h2>
                     </div>
                 </div>
@@ -381,7 +381,7 @@
                 </div>
                 <div class="row">
                     <div class="section-title">
-                        <h2>Химические <span>продукты</span></h2>
+                        <h2 id="chemical">Химические <span>продукты</span></h2>
                     </div>
                 </div>
                 <div class="row">
@@ -446,7 +446,7 @@
                 <div class="row about-features">
                     <div class="col-md-8">
                         <div class="content">
-                            <h5>О компании</h5>
+                            <h5 id="about">О компании</h5>
                             <h1>ОcОО  <span>Топливный Альянс</span></h1>
                             <p class="p-text">Стремительно развивающаяся компания, созданная опытными нефтетрейдерами, обладающая финансовыми, административными и кадровыми ресурсами, позволившими в короткое время выйти на рынок проявить себя как надежный партнер.</p>
                             <ul class="company-list mr-50">
@@ -577,7 +577,7 @@
                     <div class="col-md-8">
                         <div class="contact-item">
                             <!-- <h5>plant is an industrial site</h5> -->
-                            <h3>Также «Топливный Альянс» готов обеспечить импортные поставки из Китая и стран Юго-Восточной Азии различных химических продуктов.</h3>
+                            <h3 id="partners">Также «Топливный Альянс» готов обеспечить импортные поставки из Китая и стран Юго-Восточной Азии различных химических продуктов.</h3>
                             <!-- <p>Также «Топливный Альянс» готов обеспечить импортные поставки из Китая и стран Юго-Восточной Азии различных химических продуктов. </p> -->
                         </div>
                     </div>
@@ -860,10 +860,11 @@
                 <div class="col-md-9 col-sm-12">
                     <div class="footer-item footer-widget-one">
                       <img class="footer-logo mb-25" src="images/logo-1.png" alt="">
+                      <a name="contact"></a>
                         <p>Кыргызская Республика, Чуйская обл., <br>
                             Аламудунский р-н, с. Кок-Жар, ул. Бейшена Егимбаева д. 34</p>
                           <hr>
-                          <h6>Подписывайтесь на<span> нас</span></h6>
+                          <h6 id="contact">Подписывайтесь на<span> нас</span></h6>
                           <ul class="social-icon bg-transparent bordered-theme">
                             <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
                             <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
@@ -918,9 +919,9 @@
                       <div class="border-style-3"></div>
                     </div>
                     <ul class="footer-list footer-contact mb-10">
-                      <li><i class="pe-7s-call"></i> Phone: 001 (407) 901-6400</li>
-                      <li><i class="pe-7s-print"></i> Fax: 001 (407) 901-6400</li>
-                      <li><i class="pe-7s-mail"></i> <a href="mailto:">Email: info@bdCoder.com</a></li>
+                      <li><i class="fa fa-phone"></i> Phone: 001 (407) 901-6400</li>
+                      <li><i class="fa fa-fax"></i> Fax: 001 (407) 901-6400</li>
+                      <li><i class="fa fa-mail-forward"></i> <a>Email: fuel-alliance@mail.ru</a></li>
                     </ul>
                     <!-- <div class="footer-item">
                       <h6>News <span>letter</span></h6>
@@ -942,7 +943,7 @@
           <div class="container">
             <div class="row">
               <div class="col-12 text-center">
-                <p><a target="_blank" href="https://www.templateshub.net">Топливный Альянс</a></p>
+                <p><a>Топливный Альянс</a></p>
               </div>
             </div>
           </div>
@@ -978,6 +979,35 @@
 
       <!-- Custom JavaScript -->
       <script src="js/script.js"></script>
+      <script>
+        var main = document.getElementById('main')
+        function scrollToMain() {
+            return main.scrollIntoView({behavior: "smooth"})
+        }
+        var neft = document.getElementById('neft')
+        function scrollToNeft() {
+            return neft.scrollIntoView({behavior: "smooth"});
+        }
+    
+        var chemical = document.getElementById('chemical')
+        function scrollToChemical() {
+            return chemical.scrollIntoView({behavior: "smooth"})
+        }
+    
+        var about = document.getElementById('about')
+        function scrollToAbout() {
+            return about.scrollIntoView({behavior: "smooth"})
+        }
+    
+        var partners = document.getElementById('partners')
+        function scrollToPartners() {
+            return partners.scrollIntoView({behavior: "smooth"})
+        }
+        var contact = document.getElementById('contact')
+        function scrollToContact() {
+            return contact.scrollIntoView({behavior: "smooth"})
+        }
+    </script>
 
 </body>
 
